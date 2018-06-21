@@ -41,6 +41,7 @@ OBJECT_TYPES = {
 
 
 app = dash.Dash('__name__')
+server = app.server
 
 # For simplicty I used dash's oil and gas demo as a template
 app.css.append_css(
