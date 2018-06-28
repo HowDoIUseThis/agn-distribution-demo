@@ -17,7 +17,7 @@ emission_line_options = [
     {'label': str(line), 'value': str(EMISSION_LINES[line])} for line in EMISSION_LINES]
 
 # Data read in
-df = pd.read_hdf('store_df.h5', 'table')
+df = pd.read_hdf('data.h5', 'table')
 df['PrettyPercent'] = ('P(AGN): ' + df['BPT:P(AGN)'].map('{:.02%}'.format) +
                        ' P(SF): ' + df['BPT:P(SF)'].map('{:.02%}'.format))
 
